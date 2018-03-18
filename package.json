@@ -1,0 +1,19 @@
+{
+  "name": "youtube-search",
+  "version": "1.0.0",
+  "description": "A simple application to search youtube videos!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cauequeiroz/youtube-search.git"
+  },
+  "author": "Caue Queiroz <cauenqueiroz@gmail.com> (http://cauequeiroz.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cauequeiroz/youtube-search/issues"
+  },
+  "homepage": "https://github.com/cauequeiroz/youtube-search#readme"
+}
