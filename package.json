@@ -8,7 +8,9 @@
     "css": "./node_modules/.bin/gulp",
     "css:watch": "npm run css -- --watch",
     "js": "./node_modules/.bin/webpack --colors --progress",
-    "js:watch": "npm run js -- --watch"
+    "js:watch": "npm run js -- --watch",
+    "server": "./node_modules/.bin/http-server",
+    "start": "npm run css && npm run js && npm run server"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "gulp": "^3.9.1",
     "gulp-less": "^4.0.0",
     "gulp-sourcemaps": "^2.6.4",
+    "http-server": "^0.11.1",
     "webpack": "^2.4.1",
     "yargs": "^11.0.0"
   }
