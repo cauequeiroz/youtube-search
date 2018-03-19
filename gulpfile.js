@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
+const cssmin = require('gulp-cssmin');
 const sourcemaps = require('gulp-sourcemaps');
 const args = require('yargs').argv;
 
@@ -10,6 +11,7 @@ gulp.task('less', () => gulp
   .src('./src/css/style.less')
   .pipe(sourcemaps.init())
   .pipe(less())
+  .pipe(cssmin())
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('./dist/')));
 
