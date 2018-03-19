@@ -25,4 +25,8 @@ export default class VideoList {
       this.add(video);
     });
   }
+
+  getVideos() {
+    return [].concat(this.list);
+  }
 }
