@@ -1,12 +1,16 @@
+import AppView from '../view/AppView';
+
 export default class YoutubeSearchController {
   constructor() {
-    const $ = document.querySelector.bind(document);
-
-    this.searchInput = $('.search__input');
+    this.appView = new AppView('.appView');
   }
 
-  search() {
-    const query = this.searchInput.value;
+  search(event) {
+    event.preventDefault();
+
+    this.appView.closeFullScreenSearch();
+
+    const query = this.appView.getSearchText();
 
     console.log(`[DEV] Searching for: ${query}`);
   }
