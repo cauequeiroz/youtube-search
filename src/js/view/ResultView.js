@@ -1,4 +1,4 @@
-export default class ResultsView {
+export default class ResultView {
   constructor(element) {
     this.element = document.querySelector(element);
     this.model = null;
