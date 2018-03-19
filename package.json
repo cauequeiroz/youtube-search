@@ -10,7 +10,8 @@
     "js": "./node_modules/.bin/webpack --colors --progress",
     "js:watch": "npm run js -- --watch",
     "server": "./node_modules/.bin/http-server",
-    "start": "npm run css && npm run js && npm run server"
+    "build": "npm run css && npm run js",
+    "start": "npm run build && npm run server"
   },
   "repository": {
     "type": "git",
@@ -36,5 +37,8 @@
     "http-server": "^0.11.1",
     "webpack": "^2.4.1",
     "yargs": "^11.0.0"
+  },
+  "dependencies": {
+    "youtube-api-client": "^1.0.1"
   }
 }
