@@ -1,24 +1,50 @@
 @import 'reset';
-
-/*  Fonts
------------------------------------------------------------------- */
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-
 
 /*  General
 ------------------------------------------------------------------ */
 
+html, body {
+  height: 100%;
+}
+
 body {
-  border-top: 4px solid #2c3e50;
-  background: #ecf0f1 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2PUO1P4/5JJPyMDFMAZGAIwlRgqAFhNCAXLv59gAAAAAElFTkSuQmCC) repeat;
   font-family: 'Open Sans', Arial, sans-serif;
   color: #333;
 }
 
-.applicationView {
-  width: 800px;
-  margin: 20px auto;
+/*  Search Component
+------------------------------------------------------------------ */
+
+.search {
+  background: #333;
+  color: #eee;
+  height: 100px;
+  text-align: center;
+  transition: all .2s ease;
+
+  &__input {
+    border: none;
+    width: 80%;
+    border-radius: 3px;
+    background: #1a1a1a;
+    color: #eee;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    transform: translateY(0);
+    transition: all .2s ease;
+
+    @media(min-width: 840px) {
+      width: 800px;
+    }
+  }
+
+  &--expanded {
+    height: 100%;
+  }
+  &--expanded .search__input {
+    transform: translateY(200%);
+  }
 }
-
-
